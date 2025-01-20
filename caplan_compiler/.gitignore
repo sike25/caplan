@@ -1,0 +1,11 @@
+# Mac
+**/.DS_Store
+
+# General
+*~
+*.class
+*.asm
+*.log
+*.o
+
+/.vscode

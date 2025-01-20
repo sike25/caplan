@@ -1,0 +1,104 @@
+[ (OPENBRACKET)
+@0 : char (NAME)
+@1 :   (SPACE)
+@5 : newline (NAME)
+@6 : ] (CLOSEBRACKET)
+
+@13 : (NEWLINE)
+@14 : (NEWLINE)
+@15 : (NEWLINE)
+@16 : (NEWLINE)
+
+@17 : extern (EXTERN)
+@18 :   (SPACE)
+@24 : int (NAME)
+@25 :   (SPACE) @
+28 : printf (NAME)
+@29 :   (SPACE)
+@35 : ( (OPENPAREN)
+@36 : char (NAME)
+@37 : * (STAR)
+@41 :   (SPACE)
+@42 : format (NAME)
+@43 : , (COMMA)
+@49 :   (SPACE)
+@50 : etcetera (ETCETERA)
+@51 : ) (CLOSEPAREN)
+
+@59 : (NEWLINE)
+@60 : (NEWLINE)
+
+@61 : extern (EXTERN)
+@62 :   (SPACE)
+@68 : void (NAME)
+@69 : * (STAR)
+@73 :   (SPACE)
+@74 : malloc (NAME)
+@75 :   (SPACE)
+@81 : ( (OPENPAREN)
+@82 : int (NAME)
+@83 :   (SPACE)
+@86 : size (NAME)
+@87 : ) (CLOSEPAREN)
+
+@91 : (NEWLINE)
+@92 : (NEWLINE)
+@93 : (NEWLINE)
+@94 : (NEWLINE)
+
+@95 : proc (PROC)
+@96 :   (SPACE)
+@100 : int (NAME)
+@101 :   (SPACE)
+@104 : fib (NAME)
+@105 :   (SPACE)
+@108 : ( (OPENPAREN)
+@109 : int (NAME)
+@110 :   (SPACE)
+@113 : n (NAME)
+@114 : ) (CLOSEPAREN)
+
+@115 : (NEWLINE)
+@116 : (NEWLINE)
+@117 : (SPACE)
+@118 :   (SPACE)
+@119 :   (SPACE)
+@120 :   (SPACE)
+@121 :   (SPACE) @122 :   (SPACE) @123 :   (SPACE) @124 :   (SPACE) @125 :   (SPACE) @126 :   (SPACE) @127 :   (SPACE) @128 :   (SPACE) @129 :   (SPACE) @130 : [ (OPENBRACKET) @131 : ] (CLOSEBRACKET) @132 :
+ (NEWLINE) @133 : 
+ (NEWLINE) @134 : { (OPENBRACE) @135 : 
+ (NEWLINE) @136 : 
+ (NEWLINE) @137 : 	 (TAB) @138 : if (IF) @139 :   (SPACE) @141 : ( (OPENPAREN) @142 : == (DOUBLEEQUALS) @143 :   (SPACE) @145 : n (NAME) @146 :   (SPACE) @147 : 0 (INTEGER) @148 : ) (CLOSEPAREN) @149 :   (SPACE) @150 : return (RETURN) @151 :   (SPACE) @157 : 0 (INTEGER) @158 : 
+ (NEWLINE) @159 : 
+ (NEWLINE) @160 : 	 (TAB) @161 : if (IF) @162 :   (SPACE) @164 : ( (OPENPAREN) @165 : == (DOUBLEEQUALS) @166 :   (SPACE) @168 : n (NAME) @169 :   (SPACE) @170 : 1 (INTEGER) @171 : ) (CLOSEPAREN) @172 :   (SPACE) @173 : return (RETURN) @174 :   (SPACE) @180 : 1 (INTEGER) @181 : 
+ (NEWLINE) @182 : 
+ (NEWLINE) @183 : 	 (TAB) @184 : return (RETURN) @185 :   (SPACE) @191 : ( (OPENPAREN) @192 : + (PLUS) @193 :   (SPACE) @194 : ( (OPENPAREN) @195 : fib (NAME) @196 :   (SPACE) @199 : ( (OPENPAREN) @200 : - (DASH) @201 :   (SPACE) @202 : n (NAME) @203 :   (SPACE) @204 : 1 (INTEGER) @205 : ) (CLOSEPAREN) @206 : ) (CLOSEPAREN) @207 :   (SPACE) @208 : ( (OPENPAREN) @209 : fib (NAME) @210 :   (SPACE) @213 : ( (OPENPAREN) @214 : - (DASH) @215 :   (SPACE) @216 : n (NAME) @217 :   (SPACE) @218 : 2 (INTEGER) @219 : ) (CLOSEPAREN) @220 : ) (CLOSEPAREN) @221 : ) (CLOSEPAREN) @222 : 
+ (NEWLINE) @223 : 
+ (NEWLINE) @224 : } (CLOSEBRACE) @225 : 
+ (NEWLINE) @226 : 
+ (NEWLINE) @227 : 
+ (NEWLINE) @228 : 
+ (NEWLINE) @229 : proc (PROC) @230 :   (SPACE) @234 : int (NAME) @235 :   (SPACE) @238 : main (NAME) @239 :   (SPACE) @243 : ( (OPENPAREN) @244 : int (NAME) @245 :   (SPACE) @248 : argc (NAME) @249 : , (COMMA) @253 :   (SPACE) @254 : char (NAME) @255 : * (STAR) @259 : * (STAR) @260 :   (SPACE) @261 : argv (NAME) @262 : ) (CLOSEPAREN) @266 : 
+ (NEWLINE) @267 : 
+ (NEWLINE) @268 :   (SPACE) @269 :   (SPACE) @270 :   (SPACE) @271 :   (SPACE) @272 :   (SPACE) @273 :   (SPACE) @274 :   (SPACE) @275 :   (SPACE) @276 :   (SPACE) @277 :   (SPACE) @278 :   (SPACE) @279 :   (SPACE) @280 :   (SPACE) @281 :   (SPACE) @282 : [ (OPENBRACKET) @283 : int (NAME) @284 : * (STAR) @287 :   (SPACE) @288 : x (NAME) @289 : ] (CLOSEBRACKET) @290 : 
+ (NEWLINE) @291 : 
+ (NEWLINE) @292 : { (OPENBRACE) @293 : 
+ (NEWLINE) @294 : 
+ (NEWLINE) @295 : 	 (TAB) @296 : ( (OPENPAREN) @297 : = (EQUALS) @298 :   (SPACE) @299 : newline (NAME) @300 :   (SPACE) @307 : 
+ (CHAR) @309 : ) (CLOSEPAREN) @312 : 
+ (NEWLINE) @313 : 
+ (NEWLINE) @314 : 
+ (NEWLINE) @315 : 
+ (NEWLINE) @316 : 	 (TAB) @317 : ( (OPENPAREN) @318 : = (EQUALS) @319 :   (SPACE) @320 : x (NAME) @321 :   (SPACE) @322 : ( (OPENPAREN) @323 : malloc (NAME) @324 :   (SPACE) @330 : sizeof (SIZEOF) @331 : ( (OPENPAREN) @337 : int (NAME) @338 : ) (CLOSEPAREN) @341 : ) (CLOSEPAREN) @342 : ) (CLOSEPAREN) @343 : 
+ (NEWLINE) @344 : 
+ (NEWLINE) @345 : 	 (TAB) @346 : ( (OPENPAREN) @347 : = (EQUALS) @348 :   (SPACE) @349 : ( (OPENPAREN) @350 : * (STAR) @351 :   (SPACE) @352 : x (NAME) @353 : ) (CLOSEPAREN) @354 :   (SPACE) @355 : 12345 (INTEGER) @356 : ) (CLOSEPAREN) @361 : 
+ (NEWLINE) @362 : 
+ (NEWLINE) @363 : 	 (TAB) @364 : ( (OPENPAREN) @365 : printf (NAME) @366 :   (SPACE) @372 : x: %p, *x: %d %c (STRING) @373 :   (SPACE) @391 : x (NAME) @392 :   (SPACE) @393 : ( (OPENPAREN) @394 : * (STAR) @395 :   (SPACE) @396 : x (NAME) @397 : ) (CLOSEPAREN) @398 :   (SPACE) @399 : newline (NAME) @400 : ) (CLOSEPAREN) @407 : 
+ (NEWLINE) @408 : 
+ (NEWLINE) @409 : 	 (TAB) @410 : ( (OPENPAREN) @411 : printf (NAME) @412 :   (SPACE) @418 : fib(12) = %d%c (STRING) @419 :   (SPACE) @435 : ( (OPENPAREN) @436 : fib (NAME) @437 :   (SPACE) @440 : 12 (INTEGER) @441 : ) (CLOSEPAREN) @443 :   (SPACE) @444 : newline (NAME) @445 : ) (CLOSEPAREN) @452 : 
+ (NEWLINE) @453 : 
+ (NEWLINE) @454 : 	 (TAB) @455 : return (RETURN) @456 :   (SPACE) @462 : 0 (INTEGER) @463 : 
+ (NEWLINE) @464 : 
+ (NEWLINE) @465 : } (CLOSEBRACE) @466 : 
+ (NEWLINE) @467 : 
+ (NEWLINE) @468 : 
