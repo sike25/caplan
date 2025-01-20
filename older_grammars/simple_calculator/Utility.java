@@ -14,7 +14,7 @@ public class Utility {
     public static final int _maxSignedWordValue   = (int)Math.pow(2, _bitsPerWord - 1) - 1;
     public static final int _minUnsignedWordValue = 0;
     public static final int _maxUnsignedWordValue = (int)Math.pow(2, _bitsPerWord);
-    public static final int _debuggingLevel = 2;
+    public static final int _debuggingLevel = 0;
 
     /** The source code for error message generation. */
     public static List<Character> _source = null;

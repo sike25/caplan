@@ -117,7 +117,7 @@ public class Lexer {
 						c = _source.get(_position);
 					}
 					_position -= 1;
-					token = new Token(digit.toString(), _position, Token.Type.PERCENT);
+					token = new Token(digit.toString(), _position, Token.Type.INTEGER);
 					break;
 				}
 
@@ -132,21 +132,10 @@ public class Lexer {
 			}
 			_position += 1;
 		}
-
-		//printTokens(tokens);
 		return tokens;
     }
 
 	private boolean endOfSource () {
 		return _position >= _source.size();
     }
-
-	private void printTokens(List<Token> tokens) {
-		for (Token token: tokens) {
-			System.out.println("->" + token._text + "<-");
-		}
-
-	}
-
-
 }

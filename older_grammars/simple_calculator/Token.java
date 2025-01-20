@@ -70,6 +70,9 @@ public class Token {
 
     public String toString () {
 		return _text + " @" + _position;
-	
     }
+
+	public boolean isWhitespace() {
+		return _type == Type.WHITESPACE;
+	}
 }

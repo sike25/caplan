@@ -1,6 +1,0 @@
-4
-(+ 2 3)
-# A comment between expressions.
-(- 3 97) # A comment after an expression.
-(/ (* 13 100) 44)
-(% (/ 88 11) (- 13 2))
