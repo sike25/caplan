@@ -54,3 +54,8 @@ proc int main (int argc, char** argv)
 
 ### Implementation
 
+The compiler is written in four layers.
+1. Lexer
+2. Parser
+3. Verifier
+4. Generator
