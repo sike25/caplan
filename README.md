@@ -70,43 +70,4 @@ This translates the verified Program into assembly (.asm).
 
 ### Grammar
 
-program ::= multi var decl - proc decl list
 
-##### VARIABLE DECLARATIONS
-multi var decl   ::= '[' - var decl list - ']'                
-var decl list    ::= var decl - ',' - var decl list | var decl                                 
-var decl         ::= type name | 🥺
-<type>           ::= <name> '*'*
-
-##### PROCEDURE DECLARATIONS
-<proc decl list>  ::= <proc decl> <proc decl list> | 🥺
-<proc decl>       ::= 'extern' <type> <name> '(' <param decl list> ')' |
-                      'proc'   <type> <name> '(' <var decl list> ')' <multi var decl> <statement>
-<param decl list> ::= <var decl> ',' <param decl list> | ( <var decl> | 'etcetera' )
-
-##### STATEMENTS (we no longer parse print statements)
-<stmt>       ::= <multi stmt> | <control stmt> | <return stmt> | <print stmt> | <exp>
-<multi stmt> ::= '{' <stmt list> '}'                   
-<stmt list>  ::= <stmt> <stmt list> | 🥺
-
-##### CONTROL STATEMENTS
-<control stmt> ::= <conditional> | <loop>
-<conditional>  ::= 'if' <exp> <statement> [ 'else' <statement> ]
-<loop>         ::= 'while' <exp> <statement>
-
-##### EXPRESSIONS
-<exp>       ::= <sizeof> | <literal> | <operation> | <name>
-<sizeof>    ::= 'sizeof' '(' <type> ')'
-<operation> ::= '(' <operator> <expression list> ')'
-<operator>  ::= { @ - * ! + / % = == != < > || && | & ^ } | <name>
-<name>      ::= ( <alphabetic char> | '_' ) ( <alphabetic char> | <digit char> | '_' )*
-
-##### LITERALS
-<literal>        ::= <int literal> | <char literal> | <bool literal>
-<int literal>    ::= <digit>+
-<char literal>   ::= ''' <character> '''
-<bool literal>   ::= 'true' | 'false'
-<string literal> ::= '"' <character>* '"'
-
-##### 🥺
-🥺 ::= <EMPTY>
