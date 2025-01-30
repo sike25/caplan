@@ -70,4 +70,4 @@ This translates the verified Program into assembly (.asm).
 
 ### Grammar
 
-Yes, we love
+Yes, we love ourselves some grammar
