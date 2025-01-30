@@ -56,6 +56,13 @@ proc int main (int argc, char** argv)
 
 The compiler is written in four layers.
 1. Lexer
+This performs the lexical analysis converting the source code into tokens (numbers, operands, names- variables, procedures, keywords))
+   
 2. Parser
+This performs the synctatic analysis which is concerned with grammar and is the most important part of the compiler. It converts the list of tokens from the lexer into a Program object. See Grammar section for the (tree) structure of a resultant Program.
+
 3. Verifier
+This performs the semantic analysis. It is responsible for things like type theory and number overflows. This layer also includes the binder which accounts for declared variables, their initialized values (or lack thereof) and changes-- as well as binding procedures to return statements.
+   
 4. Generator
+This translates the verified Program into assembly (.asm).
