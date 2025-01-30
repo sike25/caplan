@@ -70,12 +70,12 @@ This translates the verified Program into assembly (.asm).
 
 ### Grammar
 
-<program> ::= <multi var decl> <proc decl list>
+program ::= multi var decl - proc decl list
 
 ##### VARIABLE DECLARATIONS
-<multi var decl> ::= '[' <var decl list> ']'
-<var decl list>  ::= <var decl> ',' <var decl list> | <var decl>
-<var decl>       ::= <type> <name> | 🥺
+multi var decl   ::= '[' - var decl list - ']'                
+var decl list    ::= var decl - ',' - var decl list | var decl                                 
+var decl         ::= type name | 🥺
 <type>           ::= <name> '*'*
 
 ##### PROCEDURE DECLARATIONS
