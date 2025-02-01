@@ -69,5 +69,7 @@ This translates the verified Program into assembly (.asm).
 
 
 ### Grammar
-do screenshot
+
+![image](https://github.com/user-attachments/assets/91ad4911-91b4-4156-bdd7-9c3ee6fd2232)
+
 
